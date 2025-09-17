@@ -13,12 +13,12 @@ class Manager extends Programmer{
 
         totalSalary= baseSalary+ bonus;
 
-        return 0;
+        return  0;
     }
     @Override
     public void displayInfo() {
         super.displayInfo(); {
-            System.out.println(totalSalary);
+            System.out.println( "the total salary after adding salary  is " + totalSalary);
         }
         ;
 
