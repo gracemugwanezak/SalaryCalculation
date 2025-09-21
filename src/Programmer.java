@@ -6,10 +6,10 @@ class Programmer extends Employee{
 
     @Override
     public double calculateSalary() {
-        int baseSalary=hourlyRate*workingHour;
-        return 0;
+        return hourlyRate*workingHour;
+
     }
     @Override public void displayInfo(){
-        System.out.println( calculateSalary());
+        System.out.println( "The salary before adding bonus is " + calculateSalary());
     }
 }
