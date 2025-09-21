@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+
+public class InventoryManagement{
+    public static void main(String[] args){
+        ArrayList<Item> inventory= new ArrayList<>();
+        inventory.add(new Item(1,"HP", 1200, "Lptops"));
+        inventory.add (new Item(2,"Lacoste", 2500, "T-shirts"));
+        inventory.add(new Item(2, "Nike", 3000, "shoes"));
+        inventory.add(new Item(4,"Techno",1500, "phones"));
+        //printing all items in the inventory
+        System.out.println("All items");
+        for (Item item: inventory){
+            System.out.println(item);
+        }
+    }
+}
