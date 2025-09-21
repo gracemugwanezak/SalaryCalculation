@@ -33,7 +33,11 @@ public class InventoryManagement{
         if(toRemove != null){
             inventory.remove(toRemove);
         }
-
+  //print outdated inventory
+        System.out.println("updated inventory");
+        for (Item item:inventory){
+            System.out.println(item);
+        }
 
 
     }
