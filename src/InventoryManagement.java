@@ -12,5 +12,13 @@ public class InventoryManagement{
         for (Item item: inventory){
             System.out.println(item);
         }
+        //The most expensive item
+        Item mostExpensive=inventory.get(0);
+        for(Item item:inventory){
+            if (item.price> mostExpensive.price ){
+                mostExpensive=item;
+            }
+        }
+        System.out.println("The most expensiveItem: " + mostExpensive);
     }
 }
